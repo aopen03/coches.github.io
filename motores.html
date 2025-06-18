@@ -50,3 +50,56 @@
     <script src="motores.js"></script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Motores y Bujías</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Motores y Bujías</h1>
+        
+        <!-- Botón para mostrar el formulario de añadir motor -->
+        <button id="addMotorBtn">Añadir nuevo motor</button>
+        
+        <!-- Formulario de añadir motor, oculto inicialmente -->
+        <section id="addMotorSection" style="display: none;">
+            <h2>Añadir Motor</h2>
+            <form id="motorForm">
+                <input type="text" id="motorName" placeholder="Nombre del Motor" required>
+                <input type="text" id="litrosBujia" placeholder="Litros de la bujía del Motor" required>
+                <input type="number" id="motorLiters" placeholder="Litros del Motor" required>
+                <button type="submit">Guardar Motor</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Registrar Litros en Bujías</h2>
+            <form id="bujiaForm">
+                <select id="motorSelect">
+                    <option value="">Selecciona un Motor</option>
+                </select>
+                <input type="number" id="bujiaLiters" placeholder="Litros bujía entrenamiento" required>
+                <input type="number" id="motorLiters" placeholder="Litros del motor de entrenamiento" required>
+                <button type="submit">Registrar Litros</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de Motores</h2>
+            <div id="motorList"></div>
+        </section>
+
+             <!-- Historial de motores (oculto inicialmente) -->
+             <section id="motorHistory" style="display: none;">
+                <h2>Historial de Litros en Bujías</h2>
+                <div id="bujiaHistory"></div>
+            </section>
+    </div>
+    <script src="motores.js"></script>
+</body>
+</html>
