@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración del Coche</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="car_configuration.html">Configuración de Coches</a></li>
+                <li><a href="fuel_management.html">Gestión de Combustible</a></li>
+                <li><a href="motores.html">Motores</a></li>
+            </ul>
+        </nav>
+
+        <h1>Configuración del Coche</h1>
+
+            <!-- Menú desplegable para seleccionar coches guardados -->
+            <label for="carSelect">Seleccionar coche:</label>
+            <select id="carSelect">
+                <option value="">Selecciona un coche</option>
+                <!-- Las opciones se agregarán dinámicamente -->
+            </select>
+
+        <form id="carForm">
+            <input type="text" id="carName" placeholder="Nombre del coche" required>
+            <input type="number" id="fuelLiters" placeholder="Litros de Combustible" min="0">
+            <input type="number" id="batteryCount" placeholder="Baterías Gastadas" min="0">
+        
+
+            <h3>Silicona de amortiguadores:</h3>
+            <input type="number" id="frontShockOil" placeholder="Delantero (ej: 500)" required>
+            <input type="number" id="rearShockOil" placeholder="Trasero (ej: 400)" required>
+            <h3>Silicona de diferenciales:</h3>
+            <input type="number" id="frontDiffOil" placeholder="Delantero" required>
+            <input type="number" id="centerDiffOil" placeholder="Central" required>
+            <input type="number" id="rearDiffOil" placeholder="Trasero" required>
+            <button type="submit">Guardar</button>
+        </form>
+        <div id="carList"></div>
+    </div>
+    <script src="car_configuration_script.js"></script>
+</body>
+</html>
