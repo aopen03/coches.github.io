@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuConfig = document.getElementById("menuConfig");
     const menuFuel = document.getElementById("menuFuel");
+        const menuFuel2 = document.getElementById("menuFuel2");
     const menuMotores = document.getElementById("menuMotores");
 
     // Manejar la navegación del menú
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuFuel.addEventListener("click", () => {
         window.location.href = "fuel_management.html";
     });
-        menuFuel.addEventListener("click", () => {
+    menuFuel2.addEventListener("click", () => {
         window.location.href = "fuel_management-2.html";
     });
     menuMotores.addEventListener("click", () => {
