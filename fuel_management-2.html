@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Combustible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Combustible</h1>
+
+        <!-- Formulario para calcular tiempo restante -->
+        <form id="fuelForm">
+            <label>Tiempo Rodado:</label>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <input type="number" id="timeSpentMinutes" placeholder="Minutos" min="0" required style="width: 80px;">
+                <span>min</span>
+                <input type="number" id="timeSpentSeconds" placeholder="Segundos" min="0" max="59" required style="width: 80px;">
+                <span>seg</span>
+            </div>
+
+            <label for="nitroRemaining">Nitro Sobrante (litros):</label>
+            <input type="number" id="nitroRemaining" placeholder="Ingresa el nitro sobrante" min="0" required>
+
+            <button type="button" id="calculateTime">Calcular Tiempo Total</button>
+        </form>
+
+        <!-- Resultado -->
+        <div id="result" style="margin-top: 20px;">
+            <p>Tiempo Total del tanque: <span id="remainingTimeMinutes">-</span> minutos y <span id="remainingTimeSeconds">-</span> segundos</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Creado por Antonio Cervantes Alarcón</p>
+    </footer>
+
+    <script src="fuel_management-2.js"></script>
+</body>
+</html>

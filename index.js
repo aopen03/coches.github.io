@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     menuFuel.addEventListener("click", () => {
         window.location.href = "fuel_management.html";
     });
+        menuFuel.addEventListener("click", () => {
+        window.location.href = "fuel_management-2.html";
+    });
     menuMotores.addEventListener("click", () => {
         window.location.href = "motores.html";
     });
