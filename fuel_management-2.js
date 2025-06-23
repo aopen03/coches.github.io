@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const timeSpent = minutes * 60 + seconds ;
 
         // Calcular nitro usado (125 ml es igual a 0.125 litros)
-        const nitroUsed = 125 - nitroRemaining;
+        const nitroUsed = Number(nitroRemainingInput.value);
 
         // Validar que nitroUsed sea positivo
         if (nitroUsed <= 0) {
